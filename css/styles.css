@@ -1021,6 +1021,9 @@ svg:hover #lineTwo {
   color: #fff;
   opacity: 0.3;
 }
+.footer__copyright p {
+  margin: 0;
+}
 
 .footer__copyright a {
   color: var(--color-accent);
@@ -1066,10 +1069,5 @@ svg:hover #lineTwo {
   .footer__line {
     margin-right: 7rem;
     justify-content: space-between;
-  }
-
-  .footer__copyright,
-  p {
-    margin: 0;
   }
 }
