@@ -42,6 +42,7 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NavBar Section -->
@@ -67,11 +68,11 @@
     <!-- Hero Section -->
     <section class="block block--dark block--sckewed-right hero">
       <div class="container grid grid--1x2">
-        <header class="block__header">
+        <header class="block__header" data-aos="zoom-out-up">
           <h1 class="block__heading">Tranformando Familias para Cristo</h1>
           <a href="./views/about.html" class="link-arrow">Conocenos</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-out-down">
           <source
             srcset="/images/family.webp 1x, /images/family@2x.webp 2x"
             type="image/webp"
@@ -89,7 +90,7 @@
     <section class="block container map" id="map">
       <div class="google-maps">
         <div class="grid grid--1x2">
-          <header>
+          <header data-aos="flip-down">
             <h2 class="block__heading map__header">
               Iglesia <br />
               Cristo es el Rey
@@ -104,7 +105,7 @@
               <li class="list__item">Sábados 6:30 p.m.</li>
             </ul>
           </header>
-          <div class="mapouter">
+          <div class="mapouter" data-aos="zoom-out-up">
             <div class="gmap_canvas">
               <iframe
                 width="100%"
@@ -126,7 +127,7 @@
     <section class="block message block--sckewed-left">
       <div class="container">
         <div class="grid grid--1x2">
-          <header class="mensage__header">
+          <header class="mensage__header" data-aos="zoom-in-right">
             <h2 class="block__header">Mensajes</h2>
             <p class="content__message">
               Puedes disfrutar de nuestras transmisiones en vivo a las horas de
@@ -149,7 +150,7 @@
             </div>
           </header>
           <div class="message__pics">
-            <picture>
+            <picture data-aos="zoom-in-left">
               <source
                 srcset="
                   /images/mensage-image.webp    1x,
@@ -171,7 +172,7 @@
               />
             </picture>
             <!-- circle aroun icon -->
-            <a class="play-btn"></a>
+            <a class="play-btn" data-aos="zoom-in-left"></a>
             <!-- playable icon -->
             <a
               href="https://www.youtube.com/c/IglesiaCristoeselRey-ICER/videos"
@@ -216,11 +217,11 @@
     <!-- FAQ section -->
     <section class="block container FAQ" id="FAQ">
       <header>
-        <h2 class="block__header">Preguntas Frecuentes</h2>
+        <h2 class="block__header" data-aos="flip-up">Preguntas Frecuentes</h2>
       </header>
 
       <!-- Slideshow container -->
-      <div class="slideshow-container">
+      <div class="slideshow-container" data-aos="zoom-in-up">
         <!-- Full-width images with number and caption text -->
         <div class="slides__width tripleCard">
           <div class="slides__card mySlides fade">
@@ -354,25 +355,25 @@
       id="contacto"
     >
       <div class="container">
-        <header>
+        <header data-aos="flip-right">
           <h2 class="block__header">Contáctenos</h2>
         </header>
         <div class="contact__info">
-          <div class="contact__card">
+          <div class="contact__card" data-aos="fade-up">
             <svg class="icon">
               <use xlink:href="/images/sprite.svg#letter"></use>
             </svg>
             <p class="contact__card-title">Escríbenos</p>
             <p class="contact__card-info">cristoeselreyiglesia@gmail.com</p>
           </div>
-          <div class="contact__card">
+          <div class="contact__card" data-aos="fade-up">
             <svg class="icon">
               <use xlink:href="/images/sprite.svg#smartphone"></use>
             </svg>
             <p class="contact__card-title">Llámenos</p>
             <p class="contact__card-info">829 965-6542</p>
           </div>
-          <div class="contact__card">
+          <div class="contact__card" data-aos="fade-up">
             <svg class="icon">
               <use xlink:href="/images/sprite.svg#pin"></use>
             </svg>
@@ -479,5 +480,9 @@
       </section>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

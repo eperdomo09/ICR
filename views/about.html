@@ -29,6 +29,7 @@
     />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NavBar Section -->
@@ -64,7 +65,7 @@
     <!-- Section History -->
     <section class="block block--dark block--sckewed-left hero" id="history">
       <div class="container grid grid--1x2">
-        <header class="block__header">
+        <header class="block__header" data-aos="zoom-in">
           <h1 class="block__heading">Historia</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -73,17 +74,31 @@
             doloremque ab ipsam suscipit deleniti!
           </p>
         </header>
-        <img src="" alt="ICR-building" />
+        <picture data-aos="zoom-in-up">
+          <source
+            srcset="/images/building.webp 1x, /images/building@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="/images/building.png 1x, /images/building@2x.png 2x"
+            type="image/png"
+          />
+          <img
+            class="FAQ__image"
+            src="/images/building@2x.png"
+            alt="ICR-building"
+          />
+        </picture>
       </div>
     </section>
 
     <!-- Vision Section -->
     <section class="block vision-container vision" id="vision">
-      <div class="block__header Vision__header">
+      <div class="block__header Vision__header" data-aos="flip-up">
         <h2 class="block__heading">Nuestra Visión</h2>
       </div>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#friend"></use>
@@ -91,7 +106,7 @@
             <h3>Amor y Unidad</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Amar a Dios sobre todas las cosas y a nuestro prójimo, sin importar
           credo, raza, estatus social o Religión, donde todas las personas
           puedan encontrar Amor, Perdón, Aceptación, Ayuda, Esperanza, Guía y
@@ -99,7 +114,7 @@
         </p>
       </article>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#family"></use>
@@ -107,13 +122,13 @@
             <h3 class="vision__header">Familias Sanas</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Transformar familias para Cristo, enseñándoles valores espirituales
           para fortalecer así nuestra sociedad. (Marcos 3:25)
         </p>
       </article>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#crowd"></use>
@@ -121,14 +136,14 @@
             <h3>Una Gran Familia</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Darles la bienvenida a más de 6,000 miembros integrados a la familia
           de nuestra iglesia, amando, aprendiendo, riendo y viviendo unidos en
           armonía. (Hechos 2:47), (Efesios 2:19)
         </p>
       </article>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#church"></use>
@@ -136,7 +151,7 @@
             <h3>Una Iglesia Cristiana</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Como los primeros seguidores de Cristo, nos identificamos como
           Cristianos, sin diferencias denominacionales, estableciendo que la
           Unidad y el Amor deben estar por encima de las diferencias de
@@ -144,7 +159,7 @@
         </p>
       </article>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#bible"></use>
@@ -152,7 +167,7 @@
             <h3>Evangelizar</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Llevar las buenas nuevas del reino de Dios a los pobres de espíritu,
           los quebrantados de corazón, los cautivos, los ciegos, los oprimidos y
           a toda persona sobre la faz de la tierra, por todos los medios
@@ -160,7 +175,7 @@
         </p>
       </article>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#lider"></use>
@@ -168,7 +183,7 @@
             <h3>Afirmar</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Llevar a dada creyente a ser un discípulo y un fuerte líder en el
           reino de Dios, fundamentándolo en los valores del Reino, renovando así
           su mentalidad para que su ser total sea transformado en espíritu, alma
@@ -176,7 +191,7 @@
         </p>
       </article>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#unido"></use>
@@ -184,7 +199,7 @@
             <h3>Discipular</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Adiestrar, equipar y ayudar a cada discípulo a descubrir y cumplir el
           propósito, el llamado y la voluntad de Dios para su vida; llevándolo a
           conocer su identidad como hijo, con derechos, privilegios, herencia y
@@ -192,7 +207,7 @@
         </p>
       </article>
       <article class="grid grid--1x2 vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#sender"></use>
@@ -200,7 +215,7 @@
             <h3>Enviar</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Comisionar a cada líder y discípulo para que haga la voluntad de Dios
           y llegue a su destino, llevando el Reino dondequiera que vaya. Con el
           propósito final de transferir un legado de amor, justicia y bendición
@@ -208,7 +223,7 @@
         </p>
       </article>
       <article class="vision__article">
-        <div class="vision__content">
+        <div class="vision__content" data-aos="fade-up-right">
           <div class="vision_subtitle">
             <svg class="icon icon-container icon--secondary">
               <use href="/images/sprite.svg#building"></use>
@@ -216,7 +231,7 @@
             <h3>Planta Física</h3>
           </div>
         </div>
-        <p class="vision__paragraph">
+        <p class="vision__paragraph" data-aos="fade-left">
           Adquirir, por lo menos, 100,000.00 metros2 de tierra para construir
           una iglesia, con dependencias que incluyan: Un Centro de Culto para
           miles de personas, un centro de consejería y Oración, un Colegio donde
@@ -233,14 +248,14 @@
     <!-- Leadership Section -->
     <section class="block block--gray block--sckewed-top-left" id="lidership">
       <div class="container">
-        <header class="block__header">
+        <header class="block__header" data-aos="flip-up">
           <h2>Liderazgo</h2>
           <!-- <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, non!
           </p> -->
         </header>
         <article class="grid grid--1x2 leadership">
-          <picture class="leadership__pic">
+          <picture class="leadership__pic" data-aos="zoom-in-right">
             <source
               srcset="
                 /images/pastores-generales.webp    1x,
@@ -261,7 +276,7 @@
               alt=""
             />
           </picture>
-          <div class="leadership__content">
+          <div class="leadership__content" data-aos="zoom-in-left">
             <h3 class="leadership__header">Sixto y Berkis González</h3>
             <p>Pastores Generales</p>
             <div class="leadership__media-icon">
@@ -276,7 +291,7 @@
           </div>
         </article>
         <article class="grid grid--1x2 leadership">
-          <picture class="leadership__pic">
+          <picture class="leadership__pic" data-aos="zoom-in-right">
             <source
               srcset="
                 /images/comunidad-mas.webp    1x,
@@ -297,7 +312,7 @@
               alt=""
             />
           </picture>
-          <div class="leadership__content">
+          <div class="leadership__content" data-aos="zoom-in-left">
             <h3 class="leadership__header">Comunidad Más</h3>
             <p>Liderazgo Juvenil</p>
             <div class="leadership__media-icon">
@@ -409,5 +424,9 @@
       </section>
     </footer>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
